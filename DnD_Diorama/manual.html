@@ -131,7 +131,14 @@
         fill="url(#gradMoon)"
         stroke="black"
       />
-      <text id="summerText" x="50%" y="12%" text-anchor="middle" class="small" style="font-weight: bold;">
+      <text
+        id="summerText"
+        x="50%"
+        y="12%"
+        text-anchor="middle"
+        class="small"
+        style="font-weight: bold"
+      >
         Summer
       </text>
       <text
@@ -142,7 +149,8 @@
         class="small"
         style="
           transform: translate(50%, 10%) rotate(180deg) translate(-50%, -10%)
-            translate(50%, -31%) rotate(-180deg) translate(-50%, 31%);font-weight: bold;
+            translate(50%, -31%) rotate(-180deg) translate(-50%, 31%);
+          font-weight: bold;
         "
       >
         Winter
@@ -155,7 +163,8 @@
         class="small"
         style="
           transform: translate(50%, 10%) rotate(90deg) translate(-50%, -10%)
-            translate(50%, -31%) rotate(-90deg) translate(-50%, 31%); font-weight: bold;
+            translate(50%, -31%) rotate(-90deg) translate(-50%, 31%);
+          font-weight: bold;
         "
       >
         Spring
@@ -168,21 +177,23 @@
         class="small"
         style="
           transform: translate(50%, 10%) rotate(270deg) translate(-50%, -10%)
-            translate(50%, -31%) rotate(-270deg) translate(-50%, 31%); font-weight: bold;
+            translate(50%, -31%) rotate(-270deg) translate(-50%, 31%);
+          font-weight: bold;
         "
       >
         Autumn
       </text>
-      <rect 
-      x="78%"
-      y="90%"
-      width="25%"
-      height="10%"
-      rx="0"
-      fill="none"
-      stroke="black"
-      stroke-width="1" />
-      <text x="80%" y= "96%" class="small">N = North Pole</text>
+      <rect
+        x="78%"
+        y="90%"
+        width="25%"
+        height="10%"
+        rx="0"
+        fill="none"
+        stroke="black"
+        stroke-width="1"
+      />
+      <text x="80%" y="96%" class="small">N = North Pole</text>
     </svg>
   </span>
   <span>
@@ -192,7 +203,7 @@
     </svg>
   </span>
 
-  <div style="padding-left: 20px">
+  <div style="padding-left: 40px">
     <input
       type="range"
       id="day"
@@ -211,8 +222,8 @@
     />
     <label for="day">Day/Night</label>
   </div>
-
-  <div style="padding-left: 20px">
+  <br />
+  <div style="padding-left: 40px">
     <input
       type="range"
       id="year"
@@ -229,9 +240,15 @@
       document.getElementById('winterText').style.transform = `translate(50%, 10%) rotate(${parseInt(event.value) + 180}deg) translate(-50%, -10%) translate(50%, -31%) rotate(-${parseInt(event.value) + 180}deg) translate(-50%, 31%)`;
       document.getElementById('springText').style.transform = `translate(50%, 10%) rotate(${parseInt(event.value) + 90}deg) translate(-50%, -10%) translate(50%, -31%) rotate(-${parseInt(event.value) + 90}deg) translate(-50%, 31%)`;
       document.getElementById('autumnText').style.transform = `translate(50%, 10%) rotate(${parseInt(event.value) + 270}deg) translate(-50%, -10%) translate(50%, -31%) rotate(-${parseInt(event.value) + 270}deg) translate(-50%, 31%)`;
-
     })(this)"
     />
     <label for="year">Year/Seasons</label>
   </div>
+  <br />
+  <a href="./manual.html" style="padding-left: 40px"><button>Reset</button></a>
+  <a href="./index.html" style="padding-left: 40px"
+    ><button>Go to Animated</button></a
+  >
+  <br />
+  <br />
 </body>
